@@ -7,7 +7,7 @@ gulp.task('default', ['start']);
 
 gulp.task('sass', function() {
     return gulp
-    .src('style/*.sass')
+    .src('style/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('style/'))
     .pipe(browserSync.reload({stream: true}))
@@ -30,6 +30,6 @@ gulp.task('browser-sync', function() {
     })
 });
 gulp.task('start', ['pug', 'sass', 'browser-sync'],function() {
-    gulp.watch('style/*.sass', ['sass', ]);
+    gulp.watch('style/*.scss', ['sass', ]);
     gulp.watch('index.pug', ['pug', ]);
 });
