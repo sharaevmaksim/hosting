@@ -9,7 +9,27 @@ $bg-footer: #4c515b;
 
 .header {
 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%
+    }
+
     nav {
         height: 56px;
+        background: $orange;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        a {
+            margin: 0 15px;
+            font-size: 13pt;
+            color: $white;
+        }
     }
 }
