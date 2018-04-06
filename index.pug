@@ -52,45 +52,46 @@ html(lang="en")
                         p DOMAIN
                     form(action="").search__form
                         input(type="text" placeholder="Enter your domain name")
-                        select#(name="year")
-                            option 1 Month
-                            option 3 Month
-                            option 6 Month
-                            option 9 Month
-                            option 1 Year
-
-                        //- input(type="text" placeholder='Year (0-1 year)')
+                        input(type="text" placeholder='Year (0-1 year)')
                         input(type="text" placeholder='.com')
                         button SEARCH
         .about
-            .about__benefits
-                p OUR
-                p BENEFITS
-            .about__statistics
-                .about__uptime
-                    img(src="", alt="uptime")
-                    p 99.9% UPTIME
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laborum tempore neque alias, nisi suscipit, consequuntur sequi, magni obcaecati magnam corporis quas amet itaque. Excepturi dolore odit quae corporis animi.
-                .about__support
-                    img(src="", alt="support")
-                    p 24/7/365 SUPPORT
-                    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum facere totam explicabo nihil est iste adipisci consequatur sint reiciendis quasi non quaerat temporibus, quia, repellendus, alias vitae numquam excepturi amet.
-                .about__protect
-                    img(src="", alt="protect")
-                    p PROTECT YOUR PC
-                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quam ullam, natus impedit laudantium nobis error rem hic perferendis unde ratione sint, numquam harum fugiat quaerat aspernatur, minima nesciunt dolore?
-                .about__dns
-                    img(src="", alt="dns")
-                    p DNS CONTROL
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sed quod corrupti ratione? Praesentium adipisci necessitatibus porro asperiores, soluta sunt cumque placeat atque aliquam itaque, laborum ratione ipsam dolorem optio.
-                .about__transfer
-                    img(src="", alt="transfer")
-                    p DOMAIN TRANSFER
-                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere odit nihil tempora ullam quo reiciendis eius enim dolorum est veritatis optio ad, nobis architecto accusamus tempore dolorem possimus quis obcaecati.
-                .about__security
-                    img(src="", alt="security")
-                    p 100% SECURITY
-                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, suscipit in? Laborum molestias dolores maxime aliquam enim ducimus distinctio nostrum expedita natus, obcaecati eligendi quasi eius voluptatem inventore, iusto repellat.
+            .container
+                .row.about__contant
+                    .about__benefits
+                        p OUR
+                        p BENEFITS
+                    .about__statistics
+                        .about__data.col-sm-4.col-md-4
+                            img(src="img/uptime.png", alt="uptime")
+                            .about__text
+                                p 99.9% UPTIME
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        .about__data.col-sm-4.col-md-4
+                            img(src="img/support.png", alt="support")
+                            .about__text
+                                p 24/7/365 SUPPORT
+                                p Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        .about__data.col-sm-4.col-md-4
+                            img(src="img/protect.png", alt="protect")
+                            .about__text
+                                p PROTECT YOUR PC
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        .about__data.col-sm-4.col-md-4
+                            img(src="img/dns.png", alt="dns")
+                            .about__text
+                                p DNS CONTROL
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        .about__data.col-sm-4.col-md-4
+                            img(src="img/transfer.png", alt="transfer")
+                            .about__text
+                                p DOMAIN TRANSFER
+                                p Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        .about__data.col-sm-4.col-md-4
+                            img(src="img/security.png", alt="security")
+                            .about__text
+                                p 100% SECURITY
+                                p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         .hot
             .hot__now
                 p NOW
