@@ -6,12 +6,45 @@ $bg-search: #e7f4f8;
 $white: #ffffff;
 $bg-hot: #fffbde;
 $bg-footer: #4c515b;
+$header-b: #dde2e8;
 
 .header {
 
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: space-between;
+    height: 150px;
+
+    &__logo {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin: 34px 0;
+        p {
+            padding-left: 9px;
+        }
+    }
+
+    &__autorization {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin: 43px 0 42px 0;
+        border-top: 1px solid $header-b;
+        border-bottom: 1px solid $header-b;
+
+        p {
+            padding: 0 3px;
+            border-right: 1px solid $header-b;
+        }
+        button {
+            padding: 0 3px;
+            &:nth-child(2) {
+                border-right: 1px solid $header-b;
+            }
+        }
+    }
 
     &__content {
         display: flex;
@@ -22,14 +55,93 @@ $bg-footer: #4c515b;
 
     nav {
         height: 56px;
-        background: $orange;
         display: flex;
         flex-flow: row;
         align-items: center;
+
         a {
-            margin: 0 15px;
-            font-size: 13pt;
+            height: 56px;
+            padding: 0 20px;
+            font-size: 15px;
             color: $white;
+            display: flex;
+            align-items: center;
+            background: $orange;
+            
+            &:hover {
+                background: $blue;
+            }
+        }
+    }
+}
+
+.carousel {
+    height: 570px;
+    background: $bg-carousel;
+    color: $white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &__title {
+        
+        display: flex;
+        flex-flow: column;
+    }
+    &__buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+.search {
+
+    background: $bg-search;
+
+    &__contant {
+        display: flex;
+        flex-flow: row;
+    }
+    &__text {
+        margin: 41px 29px 0 0;
+        p {
+            font-size: 18pt;
+        }
+        p:nth-child(2) {
+            font-size: 10.5pt;
+        }
+    }
+    &__form {
+        margin: 73px 0 72px 0;
+        input {
+            outline: none;
+            height: 55px;
+            padding-left: 24px;
+            font-size: 13.5pt;
+            text-align: left;
+            border: none;
+        }
+        input:nth-child(1) {
+            width: 430px;
+        }
+        input:nth-child(2) {
+            width: 165px;
+            margin: 0 10px 0 10px;
+        }
+        input:nth-child(3) {
+            width: 165px;
+        }
+        button {
+            width: 196px;
+            height: 55px;
+            background: $orange;
+            color: $white;
+            margin-left: 9px;
+            &:hover {
+                background: $blue;
+            }
         }
     }
 }

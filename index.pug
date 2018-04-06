@@ -4,11 +4,12 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
         link(rel="stylesheet", href="style/reset.css")
         link(rel="stylesheet", href="style/style.css")
         title Homepage
     body
-        header.header
+        header.header.container
             .header__content
                 .header__logo
                     img(src="img/logo.png", alt="logo")
@@ -30,9 +31,11 @@ html(lang="en")
                 a(href="") SUPPORT
                 a(href="") COUNTACT US
         .carousel
-            .carousel__buttons
-                button Left
-                button Right
+            .carousel__title
+                img(src="img/carousel.png", alt="carousel")
+                .carousel__buttons
+                    button Left
+                    button Right
             .carousel__text
                 h2 AWESOME HOSTING
                 p WITH UNLIMITED FEATURES
@@ -41,15 +44,24 @@ html(lang="en")
                 button 2
                 button 3
         .search
-            .search__text
-                img(src="", alt="search")
-                p SEARCH YOUR
-                p DOMAIN
-            form(action="")
-                input(type="text" placeholder="Enter your domain name")
-                input(type="text" placeholder='Year (0-1 year)')
-                input(type="text" placeholder='.com')
-                button SEARCH
+            .container
+                .row.search__contant
+                    .search__text
+                        img(src="img/search.png", alt="search")
+                        p SEARCH YOUR
+                        p DOMAIN
+                    form(action="").search__form
+                        input(type="text" placeholder="Enter your domain name")
+                        select#(name="year")
+                            option 1 Month
+                            option 3 Month
+                            option 6 Month
+                            option 9 Month
+                            option 1 Year
+
+                        //- input(type="text" placeholder='Year (0-1 year)')
+                        input(type="text" placeholder='.com')
+                        button SEARCH
         .about
             .about__benefits
                 p OUR

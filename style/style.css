@@ -2,7 +2,30 @@
 .header {
   display: flex;
   flex-flow: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between;
+  height: 150px; }
+  .header__logo {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 34px 0; }
+    .header__logo p {
+      padding-left: 9px; }
+  .header__autorization {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: 43px 0 42px 0;
+    border-top: 1px solid #dde2e8;
+    border-bottom: 1px solid #dde2e8; }
+    .header__autorization p {
+      padding: 0 3px;
+      border-right: 1px solid #dde2e8; }
+    .header__autorization button {
+      padding: 0 3px; }
+      .header__autorization button:nth-child(2) {
+        border-right: 1px solid #dde2e8; }
   .header__content {
     display: flex;
     flex-flow: row;
@@ -10,11 +33,69 @@
     width: 100%; }
   .header nav {
     height: 56px;
-    background: #ff8261;
     display: flex;
     flex-flow: row;
     align-items: center; }
     .header nav a {
-      margin: 0 15px;
-      font-size: 13pt;
-      color: #ffffff; }
+      height: 56px;
+      padding: 0 20px;
+      font-size: 15px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      background: #ff8261; }
+      .header nav a:hover {
+        background: #52cbf8; }
+
+.carousel {
+  height: 570px;
+  background: #222836;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .carousel__title {
+    display: flex;
+    flex-flow: column; }
+  .carousel__buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 80%; }
+
+.search {
+  background: #e7f4f8; }
+  .search__contant {
+    display: flex;
+    flex-flow: row; }
+  .search__text {
+    margin: 41px 29px 0 0; }
+    .search__text p {
+      font-size: 18pt; }
+    .search__text p:nth-child(2) {
+      font-size: 10.5pt; }
+  .search__form {
+    margin: 73px 0 72px 0; }
+    .search__form input {
+      outline: none;
+      height: 55px;
+      padding-left: 24px;
+      font-size: 13.5pt;
+      text-align: left;
+      border: none; }
+    .search__form input:nth-child(1) {
+      width: 430px; }
+    .search__form input:nth-child(2) {
+      width: 165px;
+      margin: 0 10px 0 10px; }
+    .search__form input:nth-child(3) {
+      width: 165px; }
+    .search__form button {
+      width: 196px;
+      height: 55px;
+      background: #ff8261;
+      color: #ffffff;
+      margin-left: 9px; }
+      .search__form button:hover {
+        background: #52cbf8; }
