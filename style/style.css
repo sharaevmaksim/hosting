@@ -100,5 +100,24 @@
       .search__form button:hover {
         background: #52cbf8; }
 
+.about__benefits {
+  margin: 85px 0 0 0; }
+
+.about__data {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-evenly; }
+  .about__data img {
+    object-fit: contain; }
+
 .about__text {
   width: 243px; }
+
+.about__statistics {
+  margin-top: 36px; }
+  .about__statistics:nth-child(3) {
+    margin: 63px 0 114px 0; }
+
+.hot {
+  background: #fffbde; }

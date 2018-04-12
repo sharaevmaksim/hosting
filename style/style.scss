@@ -147,10 +147,30 @@ $header-b: #dde2e8;
 }
 
 .about {
+
+    &__benefits {
+        margin: 85px 0 0 0;
+    }
     &__data {
-        
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            object-fit: contain;
+        }
     }
     &__text {
         width: 243px;
     }
+    &__statistics {
+        margin-top: 36px;
+        &:nth-child(3) {
+            margin: 63px 0 114px 0;
+        }
+    }
+}
+
+.hot {
+    background: $bg-hot;
 }

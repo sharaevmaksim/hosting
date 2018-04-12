@@ -57,11 +57,11 @@ html(lang="en")
                         button SEARCH
         .about
             .container
-                .row.about__contant
+                .about__contant
                     .about__benefits
                         p OUR
                         p BENEFITS
-                    .about__statistics
+                    .about__statistics.row
                         .about__data.col-sm-4.col-md-4
                             img(src="img/uptime.png", alt="uptime")
                             .about__text
@@ -77,6 +77,7 @@ html(lang="en")
                             .about__text
                                 p PROTECT YOUR PC
                                 p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    .about__statistics.row
                         .about__data.col-sm-4.col-md-4
                             img(src="img/dns.png", alt="dns")
                             .about__text
@@ -93,23 +94,26 @@ html(lang="en")
                                 p 100% SECURITY
                                 p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         .hot
-            .hot__now
-                p NOW
-                h3 WHAT IS HOT
-                img(src="", alt="what is hot")
-            .hot__features
-                p OUR
-                h3 FEATURES
-                ul
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-                    li Lorem ipsum dolor
-            button VIEW ALL
+            .container
+                .row
+                    .hot__now.col-sm-5.col-md-5
+                        p NOW
+                        h3 WHAT IS HOT
+                        img(src="", alt="what is hot")
+                    .hot__features.col-sm-5.col-md-5
+                        p OUR
+                        h3 FEATURES
+                        ul
+                            li Lorem ipsum dolor
+                            li Lorem ipsum dolor
+                            li Lorem ipsum dolor
+                            li Lorem ipsum dolor
+                        ul
+                            li Lorem ipsum dolor
+                            li Lorem ipsum dolor
+                            li Lorem ipsum dolor
+                            li Lorem ipsum dolor
+                    button.col-sm-2.col-md-2 VIEW ALL
         .price
             .price__item
                 p $5
